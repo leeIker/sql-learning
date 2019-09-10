@@ -62,4 +62,10 @@ alter table table-name add constarint constraint-name foreign key（conlumn-name
 （column-name）；
 注销外键的方法 alter table table-name drop foreign key name；
 其他数据库为alter table table-name drop constraint name
-收关键字
+show 关键字
+首先可以show databases 用来获取能够用的数据库
+show tables 进入数据库后 用来获取能够使用的table
+show columns from table-name 用来获取columns 会显示column的数据类型和约束
+show create table talbe—name用来显示table的类型，会显示所有信息
+show grants for user——name，展示user的权限
+
