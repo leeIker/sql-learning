@@ -69,4 +69,4 @@ show columns from table-name 用来获取columns 会显示column的数据类型�
 show create table talbe—name用来显示table的类型，会显示所有信息
 show grants for user——name，展示user的权限
 ddl还有增加user和给user增加权限的部分
-
+这个是用来检测git的pull功能
