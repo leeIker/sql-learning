@@ -69,4 +69,13 @@ show columns from table-name 用来获取columns 会显示column的数据类型�
 show create table talbe—name用来显示table的类型，会显示所有信息
 show grants for user——name，展示user的权限
 ddl还有增加user和给user增加权限的部分
-这个是用来检测git的pull功能
+create user ‘user——name’@‘%’ identified by ‘password’；第一个值为用户名，第二个值为host 第三个值为密码
+host 通常为localhost或者是%   %代表全部ip都行。
+改名直接用rename user user——name to new——name   这里的new-name不用扩在单引号里
+而注销用户则是用drop user user-name语句   user-name不用括在单引号里
+改密码为 set password for ‘user-name’@‘host’ identified by ‘new-password’；
+
+show grants for usr-name  展示user的权限
+给用户增加权限用grant 权限on数据库  to uer-name的语句
+例如 grant select on database-name。* to user-name；是将selec的权限给user；
+
