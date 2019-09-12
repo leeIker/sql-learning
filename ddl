@@ -79,4 +79,4 @@ show grants for usr-name  展示user的权限
 给用户增加权限用grant 权限on数据库  to uer-name的语句
 例如 grant select on database-name。* to user-name；是将selec的权限给user；
 
-用于测试
+
