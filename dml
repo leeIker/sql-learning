@@ -1,0 +1,44 @@
+DML语句
+
+
+
+特殊情况
+这里有is null 和not null语句，用来接在where之后判断该值是不是null
+
+
+
+select
+	基础语法为 select column——name from table——name  返回一个包好row的结果集 resultSet
+	当为多行的时候可以用，隔开   当为.的时候是选择全部
+
+		可以在column——name之前加上distint参数  将返回不重复的值	
+
+		可以使用子句，子句包含where，oder by ，group by等子句
+
+		where子句的参数是条件 可以是用逻辑运算符进行多重条件选择
+			where子句的参数可以加
+				= ，！=（<>），<,>,<=,>=,between,like,in
+					其中between and是在两者之间的数值
+					like是模糊查询，配通配符
+					in（）是在特定数值中查询
+
+		oder by是排序，默认为正序 可以加desc变成反序
+
+		group by是分组的意思 给查询结果进行分组
+		
+
+
+insert
+	其基础语法为insert  into table——name（column——name，column_name——2）values（parameter，parameter）；
+	这种格式也可以是insert into table——name valuse（parameter）
+
+update
+	基础语句为 update table——name set column——name =parameter，set column——name=parameter2	where parameter
+	如果不加where语句，会将整个column变成parameter
+	
+delete
+    基础语句为 delete column——name from table where
+	没有条件语句将删除行内所有内容
+	如果是 什么也不加delete from table 或者delete * from table——name则是删除所有东西
+	
+	

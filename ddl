@@ -2,10 +2,15 @@ mysql数据库操作ddl
 数据库操作  创建，删除
 create database database-name；
 drop database database-name；
+
+
 表的操作  创建  删除 改名
 create table table-name（column-name，column-type）。每个表最少要一个column
 drop table table-name；
 alter table table-name  rename to new-table-name；
+
+
+
 列操作  增加  删除 改名 改数据类型
 除了在创建表的时候定义列，其他的都是在alter table命令下操作列
 alter table table-name add column column-name column-type；
@@ -21,7 +26,11 @@ alter table talbe-name drop  column column-name；
 改列的数据类型是   alter table table-name modify column-name column-type；
 更改列名和数据类型 alter talbe table-name change column-name new-name new-type；
 和以上一样可以加column在column-那么以前或者不加
-然后是约束constaint的创建 删除
+
+
+
+
+约束constaint的创建 删除
 可以在创建表的时候创建，也可以在之后用alter table 去增加或者删除
 
 null 约束在创建表示增加
@@ -62,12 +71,16 @@ alter table table-name add constarint constraint-name foreign key（conlumn-name
 （column-name）；
 注销外键的方法 alter table table-name drop foreign key name；
 其他数据库为alter table table-name drop constraint name
+
+
 show 关键字
 首先可以show databases 用来获取能够用的数据库
 show tables 进入数据库后 用来获取能够使用的table
 show columns from table-name 用来获取columns 会显示column的数据类型和约束
 show create table talbe—name用来显示table的类型，会显示所有信息
 show grants for user——name，展示user的权限
+
+
 ddl还有增加user和给user增加权限的部分
 create user ‘user——name’@‘%’ identified by ‘password’；第一个值为用户名，第二个值为host 第三个值为密码
 host 通常为localhost或者是%   %代表全部ip都行。
