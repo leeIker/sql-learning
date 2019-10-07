@@ -1,3 +1,8 @@
+开启数据库命令为net start mysql
+关闭为          net stop mysql
+
+
+
 mysql数据库操作ddl
 数据库操作  创建，删除
 create database database-name；
