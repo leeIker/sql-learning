@@ -27,7 +27,7 @@ column-name column-type）；
 alter table talbe-name drop column-name或者
 alter table talbe-name drop  column column-name；
 删除多列的时候是  alter table talbe-name drop  column column-name，drop column column-name；
-改列的名字  alter talbe table-name rename column to new-name；
+改列的名字  alter talbe table-name rename column to new-name；  2020.2.28日今天用的时候不好使。
 改列的数据类型是   alter table table-name modify column-name column-type；
 更改列名和数据类型 alter talbe table-name change column-name new-name new-type；
 和以上一样可以加column在column-那么以前或者不加
@@ -96,5 +96,18 @@ host 通常为localhost或者是%   %代表全部ip都行。
 show grants for usr-name  展示user的权限
 给用户增加权限用grant 权限on数据库  to uer-name的语句
 例如 grant select on database-name。* to user-name；是将selec的权限给user；
+
+
+
+
+创建自增字段
+
+create table table_name (id INT AUTO_INCREMENT PRIMARY KEY );
+
+更改初始值
+
+alter table table_name AUTO_INCREMENT=100  //设置为从100开始自增
+
+
 
 
